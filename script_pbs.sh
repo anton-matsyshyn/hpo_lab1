@@ -4,6 +4,8 @@
 #PBS -l nodes=1:ppn=1
 #PBS -N matsyshyn_integral
 
+cd $PBS_O_WORKDIR
+
 limits=$(cat src.txt)
 
 integral=$(./my_integral $limits)
