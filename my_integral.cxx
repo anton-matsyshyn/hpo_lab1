@@ -21,10 +21,8 @@ int main(int argc, char *argv[]){
   
   float xmin = std::stof(argv[1]);
   float xmax = std::stof(argv[2]);
-  float ymin = std::stof(argv[3]);
-  float ymax = std::stof(argv[4]);
 
-  float res = integral(f, xmin, xmax, ymin, ymax);
+  float res = integral(f, xmin, xmax, 0, 4);
   
   std::cout<< "RESULT: " <<std::endl;
   std::cout<< res << std::endl;
