@@ -8,4 +8,4 @@
 cd $PBS_O_WORKDIR
 
 params=`sed -n "${PBS_ARRAYID}p" solv.inp`
-./my_integral $params > ~/$PBS_O_WORKDIR/solv.out
+./my_integral $params > ./solv.out
