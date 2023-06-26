@@ -6,4 +6,4 @@
 
 cd $PBS_O_WORKDIR
 
-cat ./solv_{1..34}.out | awk 'BEGIN{x=0}{x+=$0}END{print x}' > solv_gt.out
+cat ./solv_{1..340}_10.out | awk 'BEGIN{x=0}{x+=$0}END{print x}' > solv_gt_10.out
